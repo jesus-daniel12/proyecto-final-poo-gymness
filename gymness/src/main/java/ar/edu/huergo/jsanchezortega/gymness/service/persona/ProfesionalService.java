@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import ar.edu.huergo.jsanchezortega.gymness.entity.persona.Especialidad;
 import ar.edu.huergo.jsanchezortega.gymness.entity.persona.Profesional;
 import ar.edu.huergo.jsanchezortega.gymness.entity.plan.Plan;
-import ar.edu.huergo.jsanchezortega.gymness.entity.persona.Especialidad;
 import ar.edu.huergo.jsanchezortega.gymness.repository.persona.ProfesionalRepository;
 import ar.edu.huergo.jsanchezortega.gymness.service.plan.PlanService;
 import ar.edu.huergo.jsanchezortega.gymness.repository.persona.EspecialidadRepository;

@@ -3,7 +3,6 @@ package ar.edu.huergo.jsanchezortega.gymness.entity.plan;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import ar.edu.huergo.jsanchezortega.gymness.entity.persona.Cliente;
 import ar.edu.huergo.jsanchezortega.gymness.entity.persona.Profesional;
 import jakarta.persistence.Entity;
