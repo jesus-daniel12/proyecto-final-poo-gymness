@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class TareaRequestDTO {
 
     @NotBlank(message = "El titulo debe ser obligatorio")
