@@ -20,7 +20,7 @@ public class TareaMapper {
         Tarea tarea = new Tarea();
         tarea.setTitulo(tareaResponseDTO.getTitulo());
         tarea.setDescripcion(tareaResponseDTO.getDescripcion());
-        tarea.setCreador(tareaResponseDTO.getDescripcion());
+        tarea.setCreador(tareaResponseDTO.getCreador());
         tarea.setCompletada(false);
         return tarea;
     }
@@ -29,7 +29,7 @@ public class TareaMapper {
         if (tarea == null) {
             return null;
         }
-        return new TareaResponseDTO(tarea.getId(), tarea.getTitulo(), tarea.getDescripcion(), tarea.getCreador(), tarea.isCompletada());
+        return new TareaResponseDTO(tarea.getId(), tarea.getTitulo(), tarea.getDescripcion(),tarea.getCreador() , tarea.isCompletada());
     } 
 
     public List<TareaResponseDTO> toDTOList(List<Tarea> entities) {
