@@ -10,4 +10,6 @@ import ar.edu.huergo.jsanchezortega.gymness.entity.calculadora.Calculadora;
 @Repository
 public interface CalculadoraRepository extends JpaRepository<Calculadora,Long>{
     List<Calculadora> findByOperacion(String operacion);
+    List<Calculadora> findTop5ByOrderByIdDesc();
+
 } 
