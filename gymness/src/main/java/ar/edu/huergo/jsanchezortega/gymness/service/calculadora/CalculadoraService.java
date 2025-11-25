@@ -38,9 +38,12 @@ public class CalculadoraService {
 
     }
 
-    public List<Calculadora> obtenerLos5Ultimos(Calculadora ultimos){
-        
-        
+    public List<Calculadora> obtenerLos5Ultimos(){
+        return calculadoraRepository.findTop5ByOrderByIdDesc();        
+    }
+
+    public List<Calculadora> obtenerTodosLosCalculos(){
+        return calculadoraRepository.findAll();
     }
 
 
